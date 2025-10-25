@@ -13,6 +13,13 @@ interface User {
   };
 }
 
+interface Comment {
+  id: number;
+  name: string;
+  body: string;
+  email: string;
+}
+
 interface Post {
   id: number;
   title: string;
@@ -74,11 +81,11 @@ const CommentsList = async ({ postId }: { postId: number }) => {
   const response = await fetch(
     `https://jsonplaceholder.typicode.com/comments?postId=${postId}&_limit=2`
   );
-  const comments = await response.json();
+  const comments: Comment[] = await response.json();
 
   return (
     <div className="space-y-2">
-      {comments.map((comment: any) => (
+      {comments.map((comment: Comment) => (
         <div key={comment.id} className="bg-gray-50 p-2">
           <p className="text-xs font-medium text-black">{comment.name}</p>
           <p className="text-xs text-gray-600">{comment.body}</p>
