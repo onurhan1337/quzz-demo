@@ -2,6 +2,8 @@
 
 A comprehensive demonstration of **React Server Components (RSC)** with advanced tracing, debugging, and performance monitoring using the [quzz](https://github.com/onurhan1337/quzz) library.
 
+> **⚠️ Important Note**: The quzz library is designed for **development only**. In production builds, all tracing functionality is automatically disabled and no logs will be generated. This ensures optimal performance in deployed applications while providing powerful debugging capabilities during development.
+
 ## Features
 
 ### React Server Components

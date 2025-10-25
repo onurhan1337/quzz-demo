@@ -15,6 +15,22 @@ export default function Home() {
             advanced tracing, debugging, and performance monitoring using the
             quzz library.
           </p>
+
+          <div className="bg-yellow-50 border border-yellow-200 p-4 max-w-2xl mx-auto">
+            <div className="flex items-start space-x-3">
+              <div className="text-yellow-600 text-xl">⚠️</div>
+              <div>
+                <h3 className="font-semibold text-yellow-800 mb-1">
+                  Development Only
+                </h3>
+                <p className="text-sm text-yellow-700">
+                  The quzz library works only in development mode. In production
+                  builds, all tracing functionality is automatically disabled
+                  for optimal performance.
+                </p>
+              </div>
+            </div>
+          </div>
         </header>
 
         <div className="max-w-4xl mx-auto">
